@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+ <!--
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="click me"
+         android:onClick="click"/>
+-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to AcadEase"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="15sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online Acad Based System Transactions"
+        android:layout_gravity="center"
+        android:textColor="#090303"
+        android:layout_marginBottom="25sp"
+        />
+
+    <!-- ImageLogo -->
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/accountlogo"
+        android:layout_gravity="center"/>
+
+
+
+          <!-- Username   -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Username"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="textEmailAddress"
+        android:autofillHints="username"
+        android:hint="Enter Username"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        android:padding="15sp"/>
+
+
+
+           <!-- Password -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Password"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:background="@drawable/border"
+        android:padding="15sp"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"/>
+
+
+
+
+              <!-- Role -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin" />
+
+
+    </LinearLayout>
+
+
+
+                 <!-- Button -->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="horizontal">
+
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Login"
+           android:backgroundTint="#0DCDFB"
+           android:textSize="20sp"
+           android:layout_gravity="center"
+           android:ems="5"
+           android:textColor="#000000"
+           android:padding="15sp"
+
+           />
+
+
+       <Button
+           android:id="@+id/Mybutton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ems="5"
+           android:text="Sign Up"
+           android:backgroundTint="#0DCDFB"
+           android:textColor="#000000"
+           android:textSize="20sp"
+           android:padding="15sp"
+           android:layout_margin="10sp"/>
+
+
+
+   </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:layout_marginTop="25sp"
+        android:textColor="#282727"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>
